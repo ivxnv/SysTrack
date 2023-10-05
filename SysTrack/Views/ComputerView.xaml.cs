@@ -18,7 +18,7 @@ namespace SysTrack.Views
     /// <summary>
     /// Interaktionslogik für ComputerView.xaml
     /// </summary>
-    public partial class ComputerView : Page
+    public partial class ComputerView : Window
     {
         public ComputerView()
         {

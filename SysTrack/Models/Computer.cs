@@ -5,6 +5,7 @@ namespace SysTrack.Models
 {
     public class Computer
     {
+        public int Id { get; set; }
         public string ProductName { get; set; }
         public int RamSize { get; set; } // In Megabytes
         public double CpuFrequency { get; set; } // In Gigahertz
@@ -41,6 +42,17 @@ namespace SysTrack.Models
         public override string ToString()
         {
             return $"{ProductName} - {RamSize}MB RAM, {CpuFrequency}GHz CPU, Delivered on {DeliveryDate.ToShortDateString()} to {CustomerName}";
+        }
+
+        // Methode zur Validierung des Computer-Objekts
+        public bool IsValid()
+        {
+            // Hier könnten Sie weitere Validierungsregeln hinzufügen
+            if (!string.IsNullOrEmpty(MacAddress) && !IsValidMacAddress())
+            {
+                return false;
+            }
+            return true;
         }
     }
 }
