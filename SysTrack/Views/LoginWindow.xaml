@@ -4,7 +4,7 @@
         Title="Anmelden" Height="250" Width="400" ResizeMode="NoResize">
 
     <Grid Margin="20">
-        <StackPanel VerticalAlignment="Center" Spacing="15">
+        <StackPanel VerticalAlignment="Center">
             <TextBlock Text="Benutzername:" FontWeight="Bold"/>
             <TextBox x:Name="UsernameTextBox"/>
             <TextBlock Text="Passwort:" FontWeight="Bold"/>
