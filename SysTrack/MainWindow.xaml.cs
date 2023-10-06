@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
+using SysTrack.Views;
 using System.Windows.Controls;
 using System.Windows.Data;
 using System.Windows.Documents;
@@ -23,6 +24,19 @@ namespace SysTrack
         public MainWindow()
         {
             InitializeComponent();
+            Content = new LoginPage();
         }
+
+        // Im Code-Behind von Ihrem Hauptfenster (z.B. MainWindow.xaml.cs)
+        public void ShowLoginPage()
+        {
+            Content = new LoginPage();
+        }
+
+        public void ShowRegisterPage()
+        {
+            Content = new RegisterPage();
+        }
+
     }
 }

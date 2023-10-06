@@ -1,7 +1,7 @@
-﻿<Window x:Class="SysTrack.Views.LoginWindow"
+﻿<Page x:Class="SysTrack.Views.LoginPage"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="Anmelden" Height="250" Width="400" ResizeMode="NoResize">
+        Title="Anmelden" Height="250" Width="400">
 
     <Grid Margin="20">
         <StackPanel VerticalAlignment="Center">
@@ -10,6 +10,7 @@
             <TextBlock Text="Passwort:" FontWeight="Bold"/>
             <PasswordBox x:Name="PasswordBox"/>
             <Button Content="Anmelden" Width="100" HorizontalAlignment="Right" Click="OnLoginClicked"/>
+            <Button Content="Registrieren" Click="OnRegisterClicked"/>
         </StackPanel>
     </Grid>
-</Window>
+</Page>

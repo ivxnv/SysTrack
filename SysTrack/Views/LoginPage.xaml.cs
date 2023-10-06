@@ -1,35 +1,39 @@
 ﻿using System;
 using System.Windows;
+using System.Windows.Controls;
 
 namespace SysTrack.Views
 {
     /// <summary>
     /// Interaktionslogik für LoginWindow.xaml
     /// </summary>
-    public partial class LoginWindow : Window
+    public partial class LoginPage : Page
     {
-        public LoginWindow()
+        public LoginPage()
         {
             InitializeComponent();
         }
 
         private void OnLoginClicked(object sender, RoutedEventArgs e)
         {
-            // Hier kommt Ihre Anmeldeüberprüfungslogik
             string username = UsernameTextBox.Text;
             string password = PasswordBox.Password;
 
-            // Anmeldeinformationen überprüfen
-            // Beispiel (bitte durch Ihre eigentliche Anmeldeüberprüfungslogik ersetzen):
             if (IsValidLogin(username, password))
             {
-                // Anmeldung erfolgreich, Hauptfenster öffnen oder was auch immer Sie als Nächstes tun möchten
+                (Application.Current.MainWindow as MainWindow).Content = new ComputerView();
             }
             else
             {
-                // Anmeldung fehlgeschlagen, Benutzer informieren
+    
             }
         }
+
+        private void OnRegisterClicked(object sender, RoutedEventArgs e)
+        {
+            (Application.Current.MainWindow as MainWindow).ShowRegisterPage();
+        }
+
 
         private bool IsValidLogin(string username, string password)
         {
