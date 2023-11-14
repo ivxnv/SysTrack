@@ -1,0 +1,8 @@
+@use "../../_base";
+
+input {
+  outline: none;
+  border: 2px solid base.$lightgrey;
+  padding: 0.5rem;
+  border-radius: 8px;
+}

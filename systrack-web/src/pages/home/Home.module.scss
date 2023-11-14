@@ -1,0 +1,47 @@
+@use "../../_base";
+
+.home {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 15rem auto;
+  height: 45vh;
+
+  .landing {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 65%;
+    margin: auto;
+    .container {
+      display: flex;
+      flex-direction: column;
+      h1 {
+        font-size: 6vh;
+        margin: 1rem 0;
+      }
+
+      span {
+        color: base.$grey;
+        font-size: 2vh;
+      }
+
+      Button {
+        width: 17rem;
+        height: 3.5rem;
+        font-size: 2vh;
+        margin-top: 2rem;
+      }
+    }
+
+    .video {
+      width: 37vw;
+      border-radius: 10px;
+      height: calc(9 / 16 * 37vw);
+      background-color: base.$primary-bg;
+      filter: drop-shadow(0 0px 15px rgba(0, 0, 0, 0.1));
+      z-index: -1;
+    }
+  }
+}

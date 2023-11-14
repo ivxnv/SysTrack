@@ -1,0 +1,73 @@
+@use "../../_base";
+
+.login {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba($color: #000000, $alpha: 0.5);
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 28rem;
+    height: 35rem;
+    border-radius: 10px;
+    padding: 1rem;
+    background-color: base.$primary-bg;
+
+    span {
+      color: base.$grey;
+      font-weight: 600;
+    }
+
+    form {
+      display: flex;
+      width: 90%;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      h2 {
+        font-weight: 400;
+      }
+
+      Input {
+        padding: 0.8rem;
+        width: 100%;
+        transition: 0.2s ease-out;
+        font-size: 1rem;
+        margin: 1rem 0;
+
+        &:focus {
+          border: 2px solid base.$primary-color;
+        }
+      }
+
+      Button {
+        width: 100%;
+        font-size: 1rem;
+        padding: 0.8rem;
+        margin: 3rem 0;
+      }
+    }
+
+    .fa {
+      cursor: pointer;
+      border-radius: 50%;
+      font-size: 2rem;
+      align-self: flex-end;
+      color: base.$primary-text;
+      transition: ease-out 0.2s;
+
+      &:hover {
+        color: base.$primary-color;
+      }
+    }
+  }
+}
