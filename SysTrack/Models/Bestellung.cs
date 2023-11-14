@@ -37,8 +37,6 @@ namespace SysTrack.Models
             decimal gesamtbetrag = 0;
             foreach (var computer in BestellteComputer)
             {
-                // Hier nehmen wir an, dass der Kaufpreis verwendet wird.
-                // Falls die Finanzierung genutzt wird, müssen Sie die Logik entsprechend anpassen.
                 gesamtbetrag += computer.PurchasePrice;
             }
             return gesamtbetrag;

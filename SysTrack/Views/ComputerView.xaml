@@ -8,6 +8,5 @@
         Title="Computer Verwaltung" Height="350" Width="525">
 
     <Grid>
-        <!-- UI Elemente wie ListView, TextBoxen, Buttons, etc. -->
     </Grid>
 </Window>

@@ -47,7 +47,6 @@ namespace SysTrack.Models
         // Methode zur Validierung des Computer-Objekts
         public bool IsValid()
         {
-            // Hier könnten Sie weitere Validierungsregeln hinzufügen
             if (!string.IsNullOrEmpty(MacAddress) && !IsValidMacAddress())
             {
                 return false;

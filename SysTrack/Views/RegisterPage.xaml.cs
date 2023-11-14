@@ -42,9 +42,6 @@ namespace SysTrack
                 MessageBox.Show("Die Passwörter stimmen nicht überein.");
                 return;
             }
-
-            // Hier können Sie jetzt die Registrierungslogik implementieren.
-            // Z.B.: Benutzer in Datenbank speichern, etc.
             RegisterUser(username, password);
         }
 
@@ -55,12 +52,7 @@ namespace SysTrack
 
         private void RegisterUser(string username, string password)
         {
-            // Beispiel: Fügen Sie den Benutzer Ihrer Datenbank hinzu.
-            // Wenn alles erfolgreich ist:
             MessageBox.Show("Registrierung erfolgreich!");
-
-            // Optional: Zurück zur LoginPage navigieren
-            //NavigationService.Navigate(new LoginPage());
         }
     }
 }

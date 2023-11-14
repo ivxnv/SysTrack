@@ -44,7 +44,6 @@ VALUES(@ProductName, @RamSize, @CpuFrequency, @DeliveryDate, @CustomerName, @IsF
         }
         catch (Exception ex)
         {
-            // Hier könnten Sie den Fehler loggen oder weitergeben
             Console.WriteLine($"Ein Fehler ist aufgetreten: {ex.Message}");
             return false;
         }
@@ -92,7 +91,6 @@ VALUES(@ProductName, @RamSize, @CpuFrequency, @DeliveryDate, @CustomerName, @IsF
         }
         catch (Exception ex)
         {
-            // Hier könnten Sie den Fehler loggen oder weitergeben
             Console.WriteLine($"Ein Fehler ist aufgetreten: {ex.Message}");
         }
 
@@ -143,7 +141,6 @@ WHERE Id = @Id";
         }
         catch (Exception ex)
         {
-            // Hier könnten Sie den Fehler loggen oder weitergeben
             Console.WriteLine($"Ein Fehler ist aufgetreten: {ex.Message}");
             return false;
         }
@@ -168,7 +165,6 @@ WHERE Id = @Id";
         }
         catch (Exception ex)
         {
-            // Hier könnten Sie den Fehler loggen oder weitergeben
             Console.WriteLine($"Ein Fehler ist aufgetreten: {ex.Message}");
             return false;
         }

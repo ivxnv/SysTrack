@@ -37,9 +37,7 @@ namespace SysTrack.Views
 
         private bool IsValidLogin(string username, string password)
         {
-            // Hier überprüfen Sie die Anmeldeinformationen gegen Ihre Datenbank oder eine andere Quelle.
-            // Dies ist nur ein Platzhalter und sollte durch Ihre eigentliche Logik ersetzt werden.
-            return username == "admin" && password == "password"; // Beispielüberprüfung, bitte ändern!
+            return username == "admin" && password == "root";
         }
     }
 }
