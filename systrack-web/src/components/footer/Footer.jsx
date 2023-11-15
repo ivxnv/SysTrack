@@ -1,5 +1,5 @@
 import styles from "./Footer.module.scss";
-import Diconium from "../../assets/img/dic.png";
+import Logo from "../../assets/img/logo.png";
 
 function Footer() {
   return (
@@ -7,7 +7,7 @@ function Footer() {
       <div className={styles.footer__menu}>
         <div className={styles.footer__menu__container}>
           <a href="https://weare.diconium.com/de/">
-            <img src={Diconium} alt="diconium"></img>
+            <img src={Logo} alt="sysTrack"></img>
           </a>
           <ul>
             Product
@@ -27,7 +27,7 @@ function Footer() {
         </div>
         <span></span>
       </div>
-      <span>©2023 diconium GmbH</span>
+      <span>©2023 sysTrack</span>
     </footer>
   );
 }

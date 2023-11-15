@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 
 import styles from "./Header.module.scss";
-import Logo from "../../assets/img/dico.png";
+import Logo from "../../assets/img/logo.png";
 import Button from "../button/Button";
 import Login from "../login/Login";
 
@@ -18,8 +18,8 @@ function Header() {
       <header className={styles}>
         <Link to={"/"}>
           <div className={styles.logo}>
-            <img src={Logo} alt="Logo" />
-            <h1>scrumpoker</h1>
+            <img src={Logo} alt="sysTrack" />
+            <h1>sysTrack</h1>
           </div>
         </Link>
         <nav>
