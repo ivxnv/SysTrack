@@ -13,15 +13,16 @@ import styles from "./Login.module.scss";
 
 library.add(faMugHot, faGear, faUser, faXmark);
 
-function Login({ onClose }) {
+function Login() {
   return (
     <div className={styles.login}>
       <div className={styles.container}>
-        <FontAwesomeIcon className={styles.fa} onClick={onClose} icon="xmark" />
         <form id="login">
           <h2>Login</h2>
-          <Input placeholder="Username" />
-          <Input placeholder="Password" type="password" />
+          <div className={styles.data__container}>
+            <Input placeholder="Username" />
+            <Input placeholder="Password" type="password" />
+          </div>
           <Button variant="primary" label="Login" />
           <span>Create Account</span>
         </form>
