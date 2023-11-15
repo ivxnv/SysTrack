@@ -1,7 +1,15 @@
 @use "../../_base";
 
 .nav {
+    display: flex;
+    position: fixed;
+    justify-content: center;
     height: 100%;
     width: 15rem;
+    padding: 2rem;
     background-color: base.$secondary-bg;
+
+    img {
+        height: 3rem;
+    }
 }
