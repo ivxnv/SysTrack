@@ -9,30 +9,25 @@
     align-items: center;
     justify-content: space-between;
     width: 28rem;
-    height: 35rem;
+    height: 37rem;
     border-radius: 10px;
     padding: 1rem;
     border: 2px solid base.$lightgrey;
     background-color: base.$primary-bg;
 
-    span {
-      color: base.$grey;
-      font-weight: 600;
-    }
-
     form {
       display: flex;
       width: 90%;
-      height: 90%;
+      height: 100%;
       flex-direction: column;
       align-items: center;
       justify-content: space-between;
 
-      h2 {
-        font-weight: 400;
-      }
-
       .data__container {
+        h2 {
+          text-align: center;
+          font-weight: 400;
+        }
         Input {
           padding: 0.8rem;
           width: 100%;
@@ -46,11 +41,28 @@
         }
       }
 
-      Button {
+      .submit {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
         width: 100%;
-        font-size: 1rem;
-        padding: 0.8rem;
-        margin: 3rem 0;
+        span {
+          color: base.$grey;
+          font-weight: 600;
+          margin: 0.5rem;
+
+          &.Link {
+            cursor: pointer;
+          }
+        }
+
+        Button {
+          width: 100%;
+          font-size: 1rem;
+          padding: 0.8rem;
+          margin: 2rem 0;
+        }
       }
     }
 

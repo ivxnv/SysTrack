@@ -1,16 +1,43 @@
 @use "../../_base";
 
 .nav {
-    display: flex;
-    position: fixed;
-    justify-content: center;
-    height: 100%;
-    width: 15rem;
-    padding: 2rem;
-    background-color: base.$secondary-bg;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-content: space-between;
+  position: fixed;
+  height: 100%;
+  width: 15rem;
+  padding: 2rem 0;
+  background-color: base.$secondary-bg;
 
+  span {
+    margin: 0 auto;
+    color: base.$secondary-text;
+    font-weight: bold;
+  }
+
+  .items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     img {
-        filter: brightness(100);
-        height: 3rem;
+      width: 3rem;
+      margin: 0 auto;
     }
+    nav {
+      display: flex;
+      align-items: center;
+      ul {
+        margin: 3rem 0;
+        list-style: none;
+        li {
+          color: base.$secondary-text;
+          cursor: pointer;
+          margin: 0 0 2rem 0;
+          font-weight: bold;
+        }
+      }
+    }
+  }
 }
