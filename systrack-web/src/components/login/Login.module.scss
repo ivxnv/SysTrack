@@ -20,7 +20,7 @@
       width: 90%;
       height: 100%;
       flex-direction: column;
-      align-items: center;
+
       justify-content: space-between;
 
       .data__container {
@@ -28,15 +28,35 @@
           text-align: center;
           font-weight: 400;
         }
-        Input {
-          padding: 0.8rem;
-          width: 100%;
-          transition: 0.2s ease-out;
-          font-size: 1rem;
-          margin: 1rem 0;
 
-          &:focus {
-            border: 2px solid base.$primary-color;
+        .input__container {
+          display: flex;
+          flex: row;
+          justify-content: center;
+          align-items: center;
+          margin: auto;
+
+          .fa {
+            width: 1.2rem;
+            font-size: 1rem;
+            border-radius: 0;
+            color: base.$grey;
+            margin-right: 1rem;
+          }
+          Input {
+            padding: 0.8rem;
+            width: 100%;
+            transition: 0.2s ease-out;
+            font-size: 1rem;
+            margin: 1rem auto;
+
+            &:hover {
+              border: 2px solid base.$primary-color;
+            }
+
+            &:focus {
+              border: 2px solid base.$primary-color;
+            }
           }
         }
       }
@@ -54,28 +74,16 @@
 
           &.Link {
             cursor: pointer;
+            text-decoration: underline!important;
           }
         }
 
         Button {
-          width: 100%;
+          width: 15rem;
           font-size: 1rem;
           padding: 0.8rem;
           margin: 2rem 0;
         }
-      }
-    }
-
-    .fa {
-      cursor: pointer;
-      border-radius: 50%;
-      font-size: 2rem;
-      align-self: flex-end;
-      color: base.$primary-text;
-      transition: ease-out 0.2s;
-
-      &:hover {
-        color: base.$primary-color;
       }
     }
   }
